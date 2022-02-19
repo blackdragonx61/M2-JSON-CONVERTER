@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source\Convert">
+      <UniqueIdentifier>{5d41fb58-d3dd-4a6a-9344-ff3c99ccd3b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\msm">
+      <UniqueIdentifier>{dc083b2e-cd6b-4a35-a1b2-df7d414242ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\cube">
+      <UniqueIdentifier>{bc19b7a8-8ba4-44ea-a844-1594676778d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\cfg">
+      <UniqueIdentifier>{35edd4be-eb51-4770-a492-e7d3155b8101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Main">
+      <UniqueIdentifier>{e6f63971-cdb7-417a-8f85-0798ed999941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\db_config">
+      <UniqueIdentifier>{0f565858-a821-4f2d-a1fa-5ae4298fec01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\M2">
+      <UniqueIdentifier>{eb320036-8c67-4756-bdee-40e666e26c02}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource\resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Main\dumpinterface.hpp">
+      <Filter>Source\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="src\M2\pool.h">
+      <Filter>Source\M2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\cfg\cfg.hpp">
+      <Filter>Source\Convert\cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\cube\cube.hpp">
+      <Filter>Source\Convert\cube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\db_config\db_config.hpp">
+      <Filter>Source\Convert\db_config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\msm\msm.hpp">
+      <Filter>Source\Convert\msm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\M2\file_loader.h">
+      <Filter>Source\M2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\M2\text_file_loader.h">
+      <Filter>Source\M2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\metin2.ico">
+      <Filter>Resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\M2JSONCONVERTER.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main\main.cpp">
+      <Filter>Source\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\cfg\cfg.cpp">
+      <Filter>Source\Convert\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\cube\cube.cpp">
+      <Filter>Source\Convert\cube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\db_config\db_config.cpp">
+      <Filter>Source\Convert\db_config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\msm\msm.cpp">
+      <Filter>Source\Convert\msm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\M2\file_loader.cpp">
+      <Filter>Source\M2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\M2\text_file_loader.cpp">
+      <Filter>Source\M2</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
