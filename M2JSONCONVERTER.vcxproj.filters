@@ -30,6 +30,9 @@
     <Filter Include="Source\M2">
       <UniqueIdentifier>{eb320036-8c67-4756-bdee-40e666e26c02}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Convert\blend">
+      <UniqueIdentifier>{78e152b6-90ed-4746-9808-1c9b5d829cca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource\resource.h">
@@ -58,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="src\M2\text_file_loader.h">
       <Filter>Source\M2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\blend\blend.hpp">
+      <Filter>Source\Convert\blend</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +97,9 @@
     </ClCompile>
     <ClCompile Include="src\M2\text_file_loader.cpp">
       <Filter>Source\M2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\blend\blend.cpp">
+      <Filter>Source\Convert\blend</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

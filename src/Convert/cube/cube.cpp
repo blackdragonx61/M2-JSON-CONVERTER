@@ -25,7 +25,7 @@ bool CConvertCUBE::BuildJson() /*override*/
 	const char* delim = " \t\r\n";
 	char* v, * token_string;
 
-	json sub{};
+	json jSub{};
 
 	while (fgets(one_line, 256, fp))
 	{
@@ -49,31 +49,31 @@ bool CConvertCUBE::BuildJson() /*override*/
 
 			if (!_strcmpi(token_string, "section"))
 			{
-				sub.clear();
+				jSub.clear();
 			}
 			else if (!_strcmpi(token_string, "npc"))
 			{
-				sub["npc"].push_back(value1);
+				jSub["npc"].push_back(value1);
 			}
 			else if (!_strcmpi(token_string, "item"))
 			{
-				sub["item"].push_back({ value1, value2 });
+				jSub["item"].push_back({ value1, value2 });
 			}
 			else if (!_strcmpi(token_string, "reward"))
 			{
-				sub["reward"].push_back({ value1, value2 });
+				jSub["reward"].push_back({ value1, value2 });
 			}
 			else if (!_strcmpi(token_string, "percent"))
 			{
-				sub["percent"] = value1;
+				jSub["percent"] = value1;
 			}
 			else if (!_strcmpi(token_string, "gold"))
 			{
-				sub["gold"] = value1;
+				jSub["gold"] = value1;
 			}
 			else if (!_strcmpi(token_string, "end"))
 			{
-				m_JsonData += std::move(sub);
+				m_JsonData += std::move(jSub);
 			}
 		}
 		catch (const std::exception& ex)

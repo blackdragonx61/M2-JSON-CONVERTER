@@ -5,6 +5,7 @@
 
 #include <Windows.h>
 
+#include "../Convert/blend/blend.hpp"
 #include "../Convert/cfg/cfg.hpp"
 #include "../Convert/cube/cube.hpp"
 #include "../Convert/db_config/db_config.hpp"
@@ -24,6 +25,7 @@ int main()
 
 	DumpInterface::CreateOutDir();
 
+	Convert(new CConvertBLEND{ "blend.txt" });
 	Convert(new CConvertCFG{ "metin2.cfg" });
 	Convert(new CConvertCUBE{ "cube.txt" });
 	Convert(new CConvertDBCONFIG{ "conf.txt" });
