@@ -11,6 +11,8 @@
 #include "../Convert/db_config/db_config.hpp"
 #include "../Convert/game_config/game_config.hpp"
 #include "../Convert/msm/msm.hpp"
+#include "../Convert/group/group.hpp"
+#include "../Convert/group_group/group_group.hpp"
 
 static void Convert(DumpInterface&& c)
 {
@@ -38,6 +40,8 @@ int main()
 	Convert(CConvertMSM{ "warrior_m.msm" });
 	Convert(CConvertMSM{ "warrior_w.msm" });
 	Convert(CConvertMSM{ "wolfman_m.msm" });
+	Convert(CConvertGROUP{ "group.txt" });
+	Convert(CConvertGROUPGROUP{ "group_group.txt" });
 
 	printf("\n");
 	printf("Finished.");

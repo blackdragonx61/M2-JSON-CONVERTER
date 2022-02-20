@@ -52,7 +52,17 @@ public:
 			return;
 		}
 
-		file << m_JsonData.dump(m_Indent);
+		try
+		{
+			file << m_JsonData.dump(m_Indent);
+		}
+		catch (const std::exception& ex)
+		{
+			printf("<%s> Error: %s\n", m_FileName.c_str(), ex.what());
+			file.close();
+			return;
+		}
+		
 		file.close();
 
 #if defined(SHOW_ELAPSED_TIME)

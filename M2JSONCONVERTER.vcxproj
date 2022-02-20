@@ -169,6 +169,8 @@
     <ClInclude Include="src\Convert\cube\cube.hpp" />
     <ClInclude Include="src\Convert\db_config\db_config.hpp" />
     <ClInclude Include="src\Convert\game_config\game_config.hpp" />
+    <ClInclude Include="src\Convert\group\group.hpp" />
+    <ClInclude Include="src\Convert\group_group\group_group.hpp" />
     <ClInclude Include="src\Convert\msm\msm.hpp" />
     <ClInclude Include="src\M2\file_loader.h" />
     <ClInclude Include="src\M2\pool.h" />
@@ -187,6 +189,8 @@
     <ClCompile Include="src\Convert\cube\cube.cpp" />
     <ClCompile Include="src\Convert\db_config\db_config.cpp" />
     <ClCompile Include="src\Convert\game_config\game_config.cpp" />
+    <ClCompile Include="src\Convert\group\group.cpp" />
+    <ClCompile Include="src\Convert\group_group\group_group.cpp" />
     <ClCompile Include="src\Convert\msm\msm.cpp" />
     <ClCompile Include="src\M2\file_loader.cpp" />
     <ClCompile Include="src\M2\text_file_loader.cpp" />

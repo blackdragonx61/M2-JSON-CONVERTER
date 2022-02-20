@@ -36,6 +36,12 @@
     <Filter Include="Source\Convert\game_config">
       <UniqueIdentifier>{d4095bc1-b242-433c-be6a-0d2d3ed76df6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Convert\group">
+      <UniqueIdentifier>{693f7a48-54cc-42ab-80cb-5e34041922d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\group_group">
+      <UniqueIdentifier>{f70ade5e-7f12-467f-afdb-a7ab4e86a45e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource\resource.h">
@@ -70,6 +76,12 @@
     </ClInclude>
     <ClInclude Include="src\Convert\game_config\game_config.hpp">
       <Filter>Source\Convert\game_config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\group\group.hpp">
+      <Filter>Source\Convert\group</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\group_group\group_group.hpp">
+      <Filter>Source\Convert\group_group</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +121,12 @@
     </ClCompile>
     <ClCompile Include="src\Convert\game_config\game_config.cpp">
       <Filter>Source\Convert\game_config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\group\group.cpp">
+      <Filter>Source\Convert\group</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\group_group\group_group.cpp">
+      <Filter>Source\Convert\group_group</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
