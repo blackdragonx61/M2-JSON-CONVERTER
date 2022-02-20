@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../Main/dumpinterface.hpp"
+#include "../../Main/dump_interface.hpp"
 
 class CConvertBLEND : public DumpInterface
 {

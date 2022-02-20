@@ -236,7 +236,8 @@ bool CConvertDBCONFIG::BuildJson() /*override*/
 		}
 		catch (const std::exception& ex)
 		{
-			printf("[%s] <%s>: %s\n", typeid(this).name(), sFileName.c_str(), ex.what());
+			printf("[%s] <%s>: %s (k:%s), (v:%s)\n", 
+				typeid(this).name(), sFileName.c_str(), ex.what(), k.c_str(), v.c_str());
 			return false;
 		}
 	}

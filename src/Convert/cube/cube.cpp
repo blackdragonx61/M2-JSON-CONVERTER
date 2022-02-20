@@ -20,14 +20,14 @@ bool CConvertCUBE::BuildJson() /*override*/
 		return false;
 	}
 	
-	char	one_line[256];
-	int		value1, value2;
+	char one_line[256]{};
+	int	value1, value2;
 	const char* delim = " \t\r\n";
 	char* v, * token_string;
 
 	json jSub{};
 
-	while (fgets(one_line, 256, fp))
+	while (fgets(one_line, sizeof(one_line), fp))
 	{
 		value1 = value2 = 0;
 
@@ -78,7 +78,8 @@ bool CConvertCUBE::BuildJson() /*override*/
 		}
 		catch (const std::exception& ex)
 		{
-			printf("[%s] <%s>: %s\n", typeid(this).name(), sFileName.c_str(), ex.what());
+			printf("[%s] <%s>: %s (token_string:%s), (value1:%d), (value2:%d)\n", 
+				typeid(this).name(), sFileName.c_str(), ex.what(), token_string, value1, value2);
 			fclose(fp);
 			return false;
 		}

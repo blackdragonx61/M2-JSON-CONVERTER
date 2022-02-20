@@ -20,13 +20,13 @@ bool CConvertBLEND::BuildJson() /*override*/
 		return false;
 	}
 
-	char	one_line[256]{};
+	char one_line[256]{};
 	const char* delim = " \t\r\n";
 	char* v;
 
 	json jSub{};
 
-	while (fgets(one_line, 256, fp))
+	while (fgets(one_line, sizeof(one_line), fp))
 	{
 		if (one_line[0] == '#')
 			continue;
@@ -107,7 +107,8 @@ bool CConvertBLEND::BuildJson() /*override*/
 		}
 		catch (const std::exception& ex)
 		{
-			printf("[%s] <%s>: %s\n", typeid(this).name(), sFileName.c_str(), ex.what());
+			printf("[%s] <%s>: %s (token_string:%s)\n", 
+				typeid(this).name(), sFileName.c_str(), ex.what(), token_string);
 			fclose(fp);
 			return false;
 		}

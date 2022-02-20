@@ -33,12 +33,15 @@
     <Filter Include="Source\Convert\blend">
       <UniqueIdentifier>{78e152b6-90ed-4746-9808-1c9b5d829cca}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Convert\game_config">
+      <UniqueIdentifier>{d4095bc1-b242-433c-be6a-0d2d3ed76df6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource\resource.h">
       <Filter>Resource</Filter>
     </ClInclude>
-    <ClInclude Include="src\Main\dumpinterface.hpp">
+    <ClInclude Include="src\Main\dump_interface.hpp">
       <Filter>Source\Main</Filter>
     </ClInclude>
     <ClInclude Include="src\M2\pool.h">
@@ -64,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="src\Convert\blend\blend.hpp">
       <Filter>Source\Convert\blend</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\game_config\game_config.hpp">
+      <Filter>Source\Convert\game_config</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +106,9 @@
     </ClCompile>
     <ClCompile Include="src\Convert\blend\blend.cpp">
       <Filter>Source\Convert\blend</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\game_config\game_config.cpp">
+      <Filter>Source\Convert\game_config</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

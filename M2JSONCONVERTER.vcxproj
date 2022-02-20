@@ -168,11 +168,12 @@
     <ClInclude Include="src\Convert\cfg\cfg.hpp" />
     <ClInclude Include="src\Convert\cube\cube.hpp" />
     <ClInclude Include="src\Convert\db_config\db_config.hpp" />
+    <ClInclude Include="src\Convert\game_config\game_config.hpp" />
     <ClInclude Include="src\Convert\msm\msm.hpp" />
     <ClInclude Include="src\M2\file_loader.h" />
     <ClInclude Include="src\M2\pool.h" />
     <ClInclude Include="src\M2\text_file_loader.h" />
-    <ClInclude Include="src\Main\dumpinterface.hpp" />
+    <ClInclude Include="src\Main\dump_interface.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resource\metin2.ico" />
@@ -185,6 +186,7 @@
     <ClCompile Include="src\Convert\cfg\cfg.cpp" />
     <ClCompile Include="src\Convert\cube\cube.cpp" />
     <ClCompile Include="src\Convert\db_config\db_config.cpp" />
+    <ClCompile Include="src\Convert\game_config\game_config.cpp" />
     <ClCompile Include="src\Convert\msm\msm.cpp" />
     <ClCompile Include="src\M2\file_loader.cpp" />
     <ClCompile Include="src\M2\text_file_loader.cpp" />

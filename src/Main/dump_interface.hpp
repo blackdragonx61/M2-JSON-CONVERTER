@@ -57,7 +57,7 @@ public:
 
 #if defined(SHOW_ELAPSED_TIME)
 		const decltype(m_TimeBegin) TimeEnd{ std::chrono::steady_clock::now() };
-		const auto ms{ std::chrono::duration_cast<std::chrono::microseconds>(TimeEnd - m_TimeBegin).count() };
+		const auto ms{ std::chrono::duration_cast<std::chrono::milliseconds>(TimeEnd - m_TimeBegin).count() };
 #endif
 
 		std::cout
@@ -67,7 +67,7 @@ public:
 #if defined(SHOW_ELAPSED_TIME)
 			<< "("
 			<< ms
-			<< " microseconds)"
+			<< " ms)"
 #endif
 			<< std::endl;
 	};
@@ -81,8 +81,9 @@ protected:
 	std::string GetOutFileName() const
 	{
 		std::string sOutFileName{ OUTDIR + std::string("/") };
-		sOutFileName += m_FileName.substr(0, m_FileName.find_last_of('.') + 1);
-		sOutFileName += "json";
+		const auto pos{ m_FileName.find_last_of('.') };
+		sOutFileName += (pos != std::string::npos) ? m_FileName.substr(0, pos) : m_FileName;
+		sOutFileName += ".json";
 		return sOutFileName;
 	}
 	

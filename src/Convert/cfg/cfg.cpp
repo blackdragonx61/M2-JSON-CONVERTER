@@ -22,7 +22,7 @@ bool CConvertCFG::BuildJson() /*override*/
 	char command[256]{};
 	char value[256]{};
 
-	while (fgets(buf, 256, fp))
+	while (fgets(buf, sizeof(buf), fp))
 	{
 		if (sscanf(buf, " %s %s\n", command, value) == EOF)
 			break;
@@ -99,7 +99,8 @@ bool CConvertCFG::BuildJson() /*override*/
 		}
 		catch (const std::exception& ex)
 		{
-			printf("[%s] <%s>: %s\n", typeid(this).name(), sFileName.c_str(), ex.what());
+			printf("[%s] <%s>: %s (command:%s), (value:%s)\n", 
+				typeid(this).name(), sFileName.c_str(), ex.what(), command, value);
 			fclose(fp);
 			return false;
 		}
