@@ -95,6 +95,8 @@ public:
 	bool GetTokenColor(const std::string& c_rstrKey, D3DCOLORVALUE* pColor);
 	bool GetTokenString(const std::string& c_rstrKey, std::string* pString);
 
+	CMemoryTextFileLoader& GetMemoryTextFileLoader();
+
 protected:
 	bool LoadGroup(TGroupNode* pGroupNode);
 

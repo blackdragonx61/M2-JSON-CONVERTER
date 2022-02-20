@@ -524,3 +524,8 @@ bool CTextFileLoader::GetTokenString(const std::string& c_rstrKey, std::string* 
 	return true;
 }
 
+CMemoryTextFileLoader& CTextFileLoader::GetMemoryTextFileLoader()
+{
+	return m_fileLoader;
+}
+

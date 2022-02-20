@@ -5,6 +5,7 @@
 
 #include <Windows.h>
 
+#include "../Convert/atlasinfo/atlasinfo.hpp"
 #include "../Convert/blend/blend.hpp"
 #include "../Convert/cfg/cfg.hpp"
 #include "../Convert/cube/cube.hpp"
@@ -26,6 +27,7 @@ int main()
 
 	DumpInterface::CreateOutDir();
 
+	Convert(CConvertATLASINFO{ "atlasinfo.txt" });
 	Convert(CConvertBLEND{ "blend.txt" });
 	Convert(CConvertCFG{ "metin2.cfg" });
 	Convert(CConvertCUBE{ "cube.txt" });

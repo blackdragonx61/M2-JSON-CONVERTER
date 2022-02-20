@@ -4,8 +4,11 @@
 
 # Includes:
 - [x] blend.txt(server)
-- [x] cfg(client)
 - [x] cube.txt(server)
+- [x] group.txt(server)
+- [x] group_group.txt(server)
+- [x] atlasinfo.txt(client)
+- [x] cfg(client)
+- [x] msm(client)
 - [x] conf.txt(db)
 - [x] CONFIG(game)
-- [x] msm(root)
