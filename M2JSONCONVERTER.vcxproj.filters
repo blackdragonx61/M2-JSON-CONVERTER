@@ -45,6 +45,9 @@
     <Filter Include="Source\Convert\atlasinfo">
       <UniqueIdentifier>{c72a2cfb-4f5c-401d-abc7-6677887ef675}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Convert\item_mask">
+      <UniqueIdentifier>{f8b48648-bf9e-4398-b00f-d642b37488ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource\resource.h">
@@ -88,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="src\Convert\atlasinfo\atlasinfo.hpp">
       <Filter>Source\Convert\atlasinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\item_mask\item_mask.hpp">
+      <Filter>Source\Convert\item_mask</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +142,9 @@
     </ClCompile>
     <ClCompile Include="src\Convert\atlasinfo\atlasinfo.cpp">
       <Filter>Source\Convert\atlasinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\item_mask\item_mask.cpp">
+      <Filter>Source\Convert\item_mask</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
