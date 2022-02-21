@@ -11,6 +11,8 @@
 #include "../Convert/Client/msm/msm.hpp"
 #include "../Convert/Client/item_desc/item_desc.hpp"
 #include "../Convert/Client/item_list/item_list.hpp"
+#include "../Convert/Client/item_scale/item_scale.hpp"
+#include "../Convert/Client/race_height/race_height.hpp"
 
 /*SERVER*/
 #include "../Convert/Server/blend/blend.hpp"
@@ -47,6 +49,8 @@ int main()
 	Convert(CConvertMSM{ "wolfman_m.msm" });
 	Convert(CConvertITEMDESC{ "itemdesc.txt" });
 	Convert(CConvertITEMLIST{ "item_list.txt" });
+	Convert(CConvertITEMSCALE{ "item_scale.txt" });
+	Convert(CConvertRACEHEIGHT{ "race_height.txt" });
 
 	/*SERVER*/
 	Convert(CConvertBLEND{ "blend.txt" });

@@ -60,6 +60,12 @@
     <Filter Include="Source\Convert\Server\blend">
       <UniqueIdentifier>{78e152b6-90ed-4746-9808-1c9b5d829cca}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Convert\Client\item_scale">
+      <UniqueIdentifier>{59df471a-e8fa-4705-ad8f-415b4f5e36ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\Client\race_height">
+      <UniqueIdentifier>{c68da586-9126-4e71-952e-f5877b248854}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource\resource.h">
@@ -112,6 +118,12 @@
     </ClInclude>
     <ClInclude Include="src\Convert\SERVER\item_mask\item_mask.hpp">
       <Filter>Source\Convert\Server\item_mask</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\Client\item_scale\item_scale.hpp">
+      <Filter>Source\Convert\Client\item_scale</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\Client\race_height\race_height.hpp">
+      <Filter>Source\Convert\Client\race_height</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +181,12 @@
     </ClCompile>
     <ClCompile Include="src\Convert\SERVER\item_mask\item_mask.cpp">
       <Filter>Source\Convert\Server\item_mask</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\Client\item_scale\item_scale.cpp">
+      <Filter>Source\Convert\Client\item_scale</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\Client\race_height\race_height.cpp">
+      <Filter>Source\Convert\Client\race_height</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
