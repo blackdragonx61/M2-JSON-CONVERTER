@@ -13,6 +13,7 @@
 #include "../Convert/Client/item_list/item_list.hpp"
 #include "../Convert/Client/item_scale/item_scale.hpp"
 #include "../Convert/Client/race_height/race_height.hpp"
+#include "../Convert/Client/shop_deco/shop_deco.hpp"
 
 /*SERVER*/
 #include "../Convert/Server/blend/blend.hpp"
@@ -51,6 +52,7 @@ int main()
 	Convert(CConvertITEMLIST{ "item_list.txt" });
 	Convert(CConvertITEMSCALE{ "item_scale.txt" });
 	Convert(CConvertRACEHEIGHT{ "race_height.txt" });
+	Convert(CConvertSHOPDECORATION{ "shop_deco.txt" });
 
 	/*SERVER*/
 	Convert(CConvertBLEND{ "blend.txt" });

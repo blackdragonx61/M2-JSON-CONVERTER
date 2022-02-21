@@ -171,6 +171,7 @@
     <ClInclude Include="src\Convert\Client\item_scale\item_scale.hpp" />
     <ClInclude Include="src\Convert\CLIENT\msm\msm.hpp" />
     <ClInclude Include="src\Convert\Client\race_height\race_height.hpp" />
+    <ClInclude Include="src\Convert\Client\shop_deco\shop_deco.hpp" />
     <ClInclude Include="src\Convert\SERVER\blend\blend.hpp" />
     <ClInclude Include="src\Convert\SERVER\cube\cube.hpp" />
     <ClInclude Include="src\Convert\SERVER\db_config\db_config.hpp" />
@@ -197,6 +198,7 @@
     <ClCompile Include="src\Convert\Client\item_scale\item_scale.cpp" />
     <ClCompile Include="src\Convert\CLIENT\msm\msm.cpp" />
     <ClCompile Include="src\Convert\Client\race_height\race_height.cpp" />
+    <ClCompile Include="src\Convert\Client\shop_deco\shop_deco.cpp" />
     <ClCompile Include="src\Convert\SERVER\blend\blend.cpp" />
     <ClCompile Include="src\Convert\SERVER\cube\cube.cpp" />
     <ClCompile Include="src\Convert\SERVER\db_config\db_config.cpp" />

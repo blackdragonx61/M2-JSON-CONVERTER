@@ -66,6 +66,9 @@
     <Filter Include="Source\Convert\Client\race_height">
       <UniqueIdentifier>{c68da586-9126-4e71-952e-f5877b248854}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Convert\Client\shop_deco">
+      <UniqueIdentifier>{d3d70fd2-cbb8-4c56-a4ce-1febdcbf8e2d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource\resource.h">
@@ -124,6 +127,9 @@
     </ClInclude>
     <ClInclude Include="src\Convert\Client\race_height\race_height.hpp">
       <Filter>Source\Convert\Client\race_height</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\Client\shop_deco\shop_deco.hpp">
+      <Filter>Source\Convert\Client\shop_deco</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +193,9 @@
     </ClCompile>
     <ClCompile Include="src\Convert\Client\race_height\race_height.cpp">
       <Filter>Source\Convert\Client\race_height</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\Client\shop_deco\shop_deco.cpp">
+      <Filter>Source\Convert\Client\shop_deco</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
