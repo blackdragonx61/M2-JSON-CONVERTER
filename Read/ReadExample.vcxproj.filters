@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{37ccfb64-f1d9-4a51-ba14-007fb284cb76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Read">
+      <UniqueIdentifier>{458403a8-19fa-4d2e-92c3-88649b750432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Read\Client">
+      <UniqueIdentifier>{fa1d29d0-e5c2-4d68-b4c4-e7631e8035d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Read\Server">
+      <UniqueIdentifier>{024f0cd8-3726-4ef7-bd60-cd66672a56c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Read\Client\atlasinfo">
+      <UniqueIdentifier>{5a5ee2e9-53e0-4a00-aac7-752a644f55a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{23d66975-ae49-482e-bcf8-b66717a2f0cb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main\main.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Read\Client\atlasinfo\atlasinfo.cpp">
+      <Filter>Source Files\Read\Client\atlasinfo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Main\read_interface.hpp">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Read\Client\atlasinfo\atlasinfo.hpp">
+      <Filter>Source Files\Read\Client\atlasinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="resource\resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\Read.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\metin2.ico">
+      <Filter>Resource</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

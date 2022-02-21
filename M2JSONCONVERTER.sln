@@ -3,18 +3,34 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "M2JSONCONVERTER", "M2JSONCONVERTER.vcxproj", "{51A3F06F-4C0D-4822-9AC4-A37EDF1DE9ED}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Read", "Read\ReadExample.vcxproj", "{4C9C992A-FABE-446A-980A-8A8D119C2697}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Convert", "Convert\M2JSONCONVERTER.vcxproj", "{51A3F06F-4C0D-4822-9AC4-A37EDF1DE9ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C9C992A-FABE-446A-980A-8A8D119C2697}.Debug|x64.ActiveCfg = Debug|x64
+		{4C9C992A-FABE-446A-980A-8A8D119C2697}.Debug|x64.Build.0 = Debug|x64
+		{4C9C992A-FABE-446A-980A-8A8D119C2697}.Debug|x86.ActiveCfg = Debug|Win32
+		{4C9C992A-FABE-446A-980A-8A8D119C2697}.Debug|x86.Build.0 = Debug|Win32
+		{4C9C992A-FABE-446A-980A-8A8D119C2697}.Release|x64.ActiveCfg = Release|x64
+		{4C9C992A-FABE-446A-980A-8A8D119C2697}.Release|x64.Build.0 = Release|x64
+		{4C9C992A-FABE-446A-980A-8A8D119C2697}.Release|x86.ActiveCfg = Release|Win32
+		{4C9C992A-FABE-446A-980A-8A8D119C2697}.Release|x86.Build.0 = Release|Win32
 		{51A3F06F-4C0D-4822-9AC4-A37EDF1DE9ED}.Debug|x64.ActiveCfg = Debug|x64
 		{51A3F06F-4C0D-4822-9AC4-A37EDF1DE9ED}.Debug|x64.Build.0 = Debug|x64
+		{51A3F06F-4C0D-4822-9AC4-A37EDF1DE9ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{51A3F06F-4C0D-4822-9AC4-A37EDF1DE9ED}.Debug|x86.Build.0 = Debug|Win32
 		{51A3F06F-4C0D-4822-9AC4-A37EDF1DE9ED}.Release|x64.ActiveCfg = Release|x64
 		{51A3F06F-4C0D-4822-9AC4-A37EDF1DE9ED}.Release|x64.Build.0 = Release|x64
+		{51A3F06F-4C0D-4822-9AC4-A37EDF1DE9ED}.Release|x86.ActiveCfg = Release|Win32
+		{51A3F06F-4C0D-4822-9AC4-A37EDF1DE9ED}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

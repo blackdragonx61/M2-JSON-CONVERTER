@@ -18,12 +18,28 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main\main.cpp" />
+    <ClCompile Include="src\Read\Client\atlasinfo\atlasinfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource\resource.h" />
+    <ClInclude Include="src\Main\read_interface.hpp" />
+    <ClInclude Include="src\Read\Client\atlasinfo\atlasinfo.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\Read.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\metin2.ico" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{51a3f06f-4c0d-4822-9ac4-a37edf1de9ed}</ProjectGuid>
-    <RootNamespace>M2JSONCONVERTER</RootNamespace>
+    <ProjectGuid>{4c9c992a-fabe-446a-980a-8a8d119c2697}</ProjectGuid>
+    <RootNamespace>ReadExample</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Read</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -72,34 +88,32 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediate\</IntDir>
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\Intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediate\</IntDir>
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\Intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediate\</IntDir>
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\Intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediate\</IntDir>
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(ProjectDir)bin\$(Configuration)\$(Platform)\Intermediate\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Extern\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -108,34 +122,30 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Extern\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Extern\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,72 +154,22 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Extern\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="resource\resource.h" />
-    <ClInclude Include="src\Convert\CLIENT\atlasinfo\atlasinfo.hpp" />
-    <ClInclude Include="src\Convert\CLIENT\cfg\cfg.hpp" />
-    <ClInclude Include="src\Convert\CLIENT\item_desc\item_desc.hpp" />
-    <ClInclude Include="src\Convert\CLIENT\item_list\item_list.hpp" />
-    <ClInclude Include="src\Convert\Client\item_scale\item_scale.hpp" />
-    <ClInclude Include="src\Convert\CLIENT\msm\msm.hpp" />
-    <ClInclude Include="src\Convert\Client\race_height\race_height.hpp" />
-    <ClInclude Include="src\Convert\Client\shop_deco\shop_deco.hpp" />
-    <ClInclude Include="src\Convert\SERVER\blend\blend.hpp" />
-    <ClInclude Include="src\Convert\SERVER\cube\cube.hpp" />
-    <ClInclude Include="src\Convert\SERVER\db_config\db_config.hpp" />
-    <ClInclude Include="src\Convert\SERVER\game_config\game_config.hpp" />
-    <ClInclude Include="src\Convert\SERVER\group\group.hpp" />
-    <ClInclude Include="src\Convert\SERVER\group_group\group_group.hpp" />
-    <ClInclude Include="src\Convert\SERVER\item_mask\item_mask.hpp" />
-    <ClInclude Include="src\M2\file_loader.h" />
-    <ClInclude Include="src\M2\pool.h" />
-    <ClInclude Include="src\M2\text_file_loader.h" />
-    <ClInclude Include="src\Main\dump_interface.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="resource\metin2.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="resource\M2JSONCONVERTER.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\Convert\CLIENT\atlasinfo\atlasinfo.cpp" />
-    <ClCompile Include="src\Convert\CLIENT\cfg\cfg.cpp" />
-    <ClCompile Include="src\Convert\CLIENT\item_desc\item_desc.cpp" />
-    <ClCompile Include="src\Convert\CLIENT\item_list\item_list.cpp" />
-    <ClCompile Include="src\Convert\Client\item_scale\item_scale.cpp" />
-    <ClCompile Include="src\Convert\CLIENT\msm\msm.cpp" />
-    <ClCompile Include="src\Convert\Client\race_height\race_height.cpp" />
-    <ClCompile Include="src\Convert\Client\shop_deco\shop_deco.cpp" />
-    <ClCompile Include="src\Convert\SERVER\blend\blend.cpp" />
-    <ClCompile Include="src\Convert\SERVER\cube\cube.cpp" />
-    <ClCompile Include="src\Convert\SERVER\db_config\db_config.cpp" />
-    <ClCompile Include="src\Convert\SERVER\game_config\game_config.cpp" />
-    <ClCompile Include="src\Convert\SERVER\group\group.cpp" />
-    <ClCompile Include="src\Convert\SERVER\group_group\group_group.cpp" />
-    <ClCompile Include="src\Convert\SERVER\item_mask\item_mask.cpp" />
-    <ClCompile Include="src\M2\file_loader.cpp" />
-    <ClCompile Include="src\M2\text_file_loader.cpp" />
-    <ClCompile Include="src\Main\main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
