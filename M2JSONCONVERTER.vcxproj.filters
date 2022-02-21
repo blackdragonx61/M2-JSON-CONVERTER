@@ -12,41 +12,53 @@
     <Filter Include="Source\Convert">
       <UniqueIdentifier>{5d41fb58-d3dd-4a6a-9344-ff3c99ccd3b5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Convert\msm">
-      <UniqueIdentifier>{dc083b2e-cd6b-4a35-a1b2-df7d414242ec}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Convert\cube">
-      <UniqueIdentifier>{bc19b7a8-8ba4-44ea-a844-1594676778d2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Convert\cfg">
-      <UniqueIdentifier>{35edd4be-eb51-4770-a492-e7d3155b8101}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\Main">
       <UniqueIdentifier>{e6f63971-cdb7-417a-8f85-0798ed999941}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Convert\db_config">
-      <UniqueIdentifier>{0f565858-a821-4f2d-a1fa-5ae4298fec01}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\M2">
       <UniqueIdentifier>{eb320036-8c67-4756-bdee-40e666e26c02}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Convert\blend">
-      <UniqueIdentifier>{78e152b6-90ed-4746-9808-1c9b5d829cca}</UniqueIdentifier>
+    <Filter Include="Source\Convert\Client">
+      <UniqueIdentifier>{3b3b843b-e332-4049-b5d6-f39484153bdd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Convert\game_config">
-      <UniqueIdentifier>{d4095bc1-b242-433c-be6a-0d2d3ed76df6}</UniqueIdentifier>
+    <Filter Include="Source\Convert\Client\msm">
+      <UniqueIdentifier>{dc083b2e-cd6b-4a35-a1b2-df7d414242ec}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Convert\group">
-      <UniqueIdentifier>{693f7a48-54cc-42ab-80cb-5e34041922d1}</UniqueIdentifier>
+    <Filter Include="Source\Convert\Client\cfg">
+      <UniqueIdentifier>{35edd4be-eb51-4770-a492-e7d3155b8101}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Convert\group_group">
-      <UniqueIdentifier>{f70ade5e-7f12-467f-afdb-a7ab4e86a45e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Convert\atlasinfo">
+    <Filter Include="Source\Convert\Client\atlasinfo">
       <UniqueIdentifier>{c72a2cfb-4f5c-401d-abc7-6677887ef675}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Convert\item_mask">
+    <Filter Include="Source\Convert\Client\item_desc">
+      <UniqueIdentifier>{6684dbc2-69a3-4469-8427-07c069b55487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\Client\item_list">
+      <UniqueIdentifier>{1de24a61-4149-4e1b-9845-380955769ae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\Server">
+      <UniqueIdentifier>{31e85f23-27c6-483f-a43b-29ae1f6aa49e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\Server\item_mask">
       <UniqueIdentifier>{f8b48648-bf9e-4398-b00f-d642b37488ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\Server\group_group">
+      <UniqueIdentifier>{f70ade5e-7f12-467f-afdb-a7ab4e86a45e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\Server\group">
+      <UniqueIdentifier>{693f7a48-54cc-42ab-80cb-5e34041922d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\Server\game_config">
+      <UniqueIdentifier>{d4095bc1-b242-433c-be6a-0d2d3ed76df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\Server\db_config">
+      <UniqueIdentifier>{0f565858-a821-4f2d-a1fa-5ae4298fec01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\Server\cube">
+      <UniqueIdentifier>{bc19b7a8-8ba4-44ea-a844-1594676778d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Convert\Server\blend">
+      <UniqueIdentifier>{78e152b6-90ed-4746-9808-1c9b5d829cca}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -59,41 +71,47 @@
     <ClInclude Include="src\M2\pool.h">
       <Filter>Source\M2</Filter>
     </ClInclude>
-    <ClInclude Include="src\Convert\cfg\cfg.hpp">
-      <Filter>Source\Convert\cfg</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Convert\cube\cube.hpp">
-      <Filter>Source\Convert\cube</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Convert\db_config\db_config.hpp">
-      <Filter>Source\Convert\db_config</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Convert\msm\msm.hpp">
-      <Filter>Source\Convert\msm</Filter>
-    </ClInclude>
     <ClInclude Include="src\M2\file_loader.h">
       <Filter>Source\M2</Filter>
     </ClInclude>
     <ClInclude Include="src\M2\text_file_loader.h">
       <Filter>Source\M2</Filter>
     </ClInclude>
-    <ClInclude Include="src\Convert\blend\blend.hpp">
-      <Filter>Source\Convert\blend</Filter>
+    <ClInclude Include="src\Convert\CLIENT\atlasinfo\atlasinfo.hpp">
+      <Filter>Source\Convert\Client\atlasinfo</Filter>
     </ClInclude>
-    <ClInclude Include="src\Convert\game_config\game_config.hpp">
-      <Filter>Source\Convert\game_config</Filter>
+    <ClInclude Include="src\Convert\CLIENT\cfg\cfg.hpp">
+      <Filter>Source\Convert\Client\cfg</Filter>
     </ClInclude>
-    <ClInclude Include="src\Convert\group\group.hpp">
-      <Filter>Source\Convert\group</Filter>
+    <ClInclude Include="src\Convert\CLIENT\msm\msm.hpp">
+      <Filter>Source\Convert\Client\msm</Filter>
     </ClInclude>
-    <ClInclude Include="src\Convert\group_group\group_group.hpp">
-      <Filter>Source\Convert\group_group</Filter>
+    <ClInclude Include="src\Convert\CLIENT\item_desc\item_desc.hpp">
+      <Filter>Source\Convert\Client\item_desc</Filter>
     </ClInclude>
-    <ClInclude Include="src\Convert\atlasinfo\atlasinfo.hpp">
-      <Filter>Source\Convert\atlasinfo</Filter>
+    <ClInclude Include="src\Convert\CLIENT\item_list\item_list.hpp">
+      <Filter>Source\Convert\Client\item_list</Filter>
     </ClInclude>
-    <ClInclude Include="src\Convert\item_mask\item_mask.hpp">
-      <Filter>Source\Convert\item_mask</Filter>
+    <ClInclude Include="src\Convert\SERVER\blend\blend.hpp">
+      <Filter>Source\Convert\Server\blend</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\SERVER\cube\cube.hpp">
+      <Filter>Source\Convert\Server\cube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\SERVER\db_config\db_config.hpp">
+      <Filter>Source\Convert\Server\db_config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\SERVER\game_config\game_config.hpp">
+      <Filter>Source\Convert\Server\game_config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\SERVER\group\group.hpp">
+      <Filter>Source\Convert\Server\group</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\SERVER\group_group\group_group.hpp">
+      <Filter>Source\Convert\Server\group_group</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\SERVER\item_mask\item_mask.hpp">
+      <Filter>Source\Convert\Server\item_mask</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -110,41 +128,47 @@
     <ClCompile Include="src\Main\main.cpp">
       <Filter>Source\Main</Filter>
     </ClCompile>
-    <ClCompile Include="src\Convert\cfg\cfg.cpp">
-      <Filter>Source\Convert\cfg</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Convert\cube\cube.cpp">
-      <Filter>Source\Convert\cube</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Convert\db_config\db_config.cpp">
-      <Filter>Source\Convert\db_config</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Convert\msm\msm.cpp">
-      <Filter>Source\Convert\msm</Filter>
-    </ClCompile>
     <ClCompile Include="src\M2\file_loader.cpp">
       <Filter>Source\M2</Filter>
     </ClCompile>
     <ClCompile Include="src\M2\text_file_loader.cpp">
       <Filter>Source\M2</Filter>
     </ClCompile>
-    <ClCompile Include="src\Convert\blend\blend.cpp">
-      <Filter>Source\Convert\blend</Filter>
+    <ClCompile Include="src\Convert\CLIENT\atlasinfo\atlasinfo.cpp">
+      <Filter>Source\Convert\Client\atlasinfo</Filter>
     </ClCompile>
-    <ClCompile Include="src\Convert\game_config\game_config.cpp">
-      <Filter>Source\Convert\game_config</Filter>
+    <ClCompile Include="src\Convert\CLIENT\cfg\cfg.cpp">
+      <Filter>Source\Convert\Client\cfg</Filter>
     </ClCompile>
-    <ClCompile Include="src\Convert\group\group.cpp">
-      <Filter>Source\Convert\group</Filter>
+    <ClCompile Include="src\Convert\CLIENT\msm\msm.cpp">
+      <Filter>Source\Convert\Client\msm</Filter>
     </ClCompile>
-    <ClCompile Include="src\Convert\group_group\group_group.cpp">
-      <Filter>Source\Convert\group_group</Filter>
+    <ClCompile Include="src\Convert\CLIENT\item_desc\item_desc.cpp">
+      <Filter>Source\Convert\Client\item_desc</Filter>
     </ClCompile>
-    <ClCompile Include="src\Convert\atlasinfo\atlasinfo.cpp">
-      <Filter>Source\Convert\atlasinfo</Filter>
+    <ClCompile Include="src\Convert\CLIENT\item_list\item_list.cpp">
+      <Filter>Source\Convert\Client\item_list</Filter>
     </ClCompile>
-    <ClCompile Include="src\Convert\item_mask\item_mask.cpp">
-      <Filter>Source\Convert\item_mask</Filter>
+    <ClCompile Include="src\Convert\SERVER\blend\blend.cpp">
+      <Filter>Source\Convert\Server\blend</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\SERVER\cube\cube.cpp">
+      <Filter>Source\Convert\Server\cube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\SERVER\db_config\db_config.cpp">
+      <Filter>Source\Convert\Server\db_config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\SERVER\game_config\game_config.cpp">
+      <Filter>Source\Convert\Server\game_config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\SERVER\group\group.cpp">
+      <Filter>Source\Convert\Server\group</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\SERVER\group_group\group_group.cpp">
+      <Filter>Source\Convert\Server\group_group</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\SERVER\item_mask\item_mask.cpp">
+      <Filter>Source\Convert\Server\item_mask</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -92,7 +92,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
@@ -108,7 +108,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
@@ -144,7 +144,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
@@ -164,16 +164,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="resource\resource.h" />
-    <ClInclude Include="src\Convert\atlasinfo\atlasinfo.hpp" />
-    <ClInclude Include="src\Convert\blend\blend.hpp" />
-    <ClInclude Include="src\Convert\cfg\cfg.hpp" />
-    <ClInclude Include="src\Convert\cube\cube.hpp" />
-    <ClInclude Include="src\Convert\db_config\db_config.hpp" />
-    <ClInclude Include="src\Convert\game_config\game_config.hpp" />
-    <ClInclude Include="src\Convert\group\group.hpp" />
-    <ClInclude Include="src\Convert\group_group\group_group.hpp" />
-    <ClInclude Include="src\Convert\item_mask\item_mask.hpp" />
-    <ClInclude Include="src\Convert\msm\msm.hpp" />
+    <ClInclude Include="src\Convert\CLIENT\atlasinfo\atlasinfo.hpp" />
+    <ClInclude Include="src\Convert\CLIENT\cfg\cfg.hpp" />
+    <ClInclude Include="src\Convert\CLIENT\item_desc\item_desc.hpp" />
+    <ClInclude Include="src\Convert\CLIENT\item_list\item_list.hpp" />
+    <ClInclude Include="src\Convert\CLIENT\msm\msm.hpp" />
+    <ClInclude Include="src\Convert\SERVER\blend\blend.hpp" />
+    <ClInclude Include="src\Convert\SERVER\cube\cube.hpp" />
+    <ClInclude Include="src\Convert\SERVER\db_config\db_config.hpp" />
+    <ClInclude Include="src\Convert\SERVER\game_config\game_config.hpp" />
+    <ClInclude Include="src\Convert\SERVER\group\group.hpp" />
+    <ClInclude Include="src\Convert\SERVER\group_group\group_group.hpp" />
+    <ClInclude Include="src\Convert\SERVER\item_mask\item_mask.hpp" />
     <ClInclude Include="src\M2\file_loader.h" />
     <ClInclude Include="src\M2\pool.h" />
     <ClInclude Include="src\M2\text_file_loader.h" />
@@ -186,16 +188,18 @@
     <ResourceCompile Include="resource\M2JSONCONVERTER.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Convert\atlasinfo\atlasinfo.cpp" />
-    <ClCompile Include="src\Convert\blend\blend.cpp" />
-    <ClCompile Include="src\Convert\cfg\cfg.cpp" />
-    <ClCompile Include="src\Convert\cube\cube.cpp" />
-    <ClCompile Include="src\Convert\db_config\db_config.cpp" />
-    <ClCompile Include="src\Convert\game_config\game_config.cpp" />
-    <ClCompile Include="src\Convert\group\group.cpp" />
-    <ClCompile Include="src\Convert\group_group\group_group.cpp" />
-    <ClCompile Include="src\Convert\item_mask\item_mask.cpp" />
-    <ClCompile Include="src\Convert\msm\msm.cpp" />
+    <ClCompile Include="src\Convert\CLIENT\atlasinfo\atlasinfo.cpp" />
+    <ClCompile Include="src\Convert\CLIENT\cfg\cfg.cpp" />
+    <ClCompile Include="src\Convert\CLIENT\item_desc\item_desc.cpp" />
+    <ClCompile Include="src\Convert\CLIENT\item_list\item_list.cpp" />
+    <ClCompile Include="src\Convert\CLIENT\msm\msm.cpp" />
+    <ClCompile Include="src\Convert\SERVER\blend\blend.cpp" />
+    <ClCompile Include="src\Convert\SERVER\cube\cube.cpp" />
+    <ClCompile Include="src\Convert\SERVER\db_config\db_config.cpp" />
+    <ClCompile Include="src\Convert\SERVER\game_config\game_config.cpp" />
+    <ClCompile Include="src\Convert\SERVER\group\group.cpp" />
+    <ClCompile Include="src\Convert\SERVER\group_group\group_group.cpp" />
+    <ClCompile Include="src\Convert\SERVER\item_mask\item_mask.cpp" />
     <ClCompile Include="src\M2\file_loader.cpp" />
     <ClCompile Include="src\M2\text_file_loader.cpp" />
     <ClCompile Include="src\Main\main.cpp" />

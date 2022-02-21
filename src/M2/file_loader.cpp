@@ -9,6 +9,31 @@ CMemoryTextFileLoader::~CMemoryTextFileLoader()
 {
 }
 
+bool CMemoryTextFileLoader::SplitLineByTab(DWORD dwLine, TTokenVector* pstTokenVector)
+{
+	pstTokenVector->reserve(10);
+	pstTokenVector->clear();
+
+	const std::string& c_rstLine = GetLineString(dwLine);
+	const int c_iLineLength = c_rstLine.length();
+
+	if (0 == c_iLineLength)
+		return false;
+
+	int basePos = 0;
+
+	do
+	{
+		int beginPos = c_rstLine.find_first_of("\t", basePos);
+
+		pstTokenVector->push_back(c_rstLine.substr(basePos, beginPos - basePos));
+
+		basePos = beginPos + 1;
+	} while (basePos < c_iLineLength && basePos > 0);
+
+	return true;
+}
+
 bool CMemoryTextFileLoader::SplitLine(DWORD dwLine, std::vector<std::string>* pstTokenVector, const char * c_szDelimeter)
 {
 	pstTokenVector->clear();
@@ -48,12 +73,55 @@ bool CMemoryTextFileLoader::SplitLine(DWORD dwLine, std::vector<std::string>* ps
 
 		pstTokenVector->push_back(c_rstLine.substr(beginPos, endPos - beginPos));
 
-		// 추가 코드. 맨뒤에 탭이 있는 경우를 체크한다. - [levites]
 		if (int(c_rstLine.find_first_not_of(c_szDelimeter, basePos)) < 0)
 			break;
 	} while (basePos < c_rstLine.length());
 
 	return true;
+}
+
+int CMemoryTextFileLoader::SplitLine2(DWORD dwLine, TTokenVector* pstTokenVector, const char* c_szDelimeter)
+{
+	pstTokenVector->reserve(10);
+	pstTokenVector->clear();
+
+	std::string stToken;
+	const std::string& c_rstLine = GetLineString(dwLine);
+
+	DWORD basePos = 0;
+
+	do
+	{
+		int beginPos = c_rstLine.find_first_not_of(c_szDelimeter, basePos);
+
+		if (beginPos < 0)
+			return -1;
+
+		int endPos;
+
+		if (c_rstLine[beginPos] == '"')
+		{
+			++beginPos;
+			endPos = c_rstLine.find_first_of("\"", beginPos);
+
+			if (endPos < 0)
+				return -2;
+
+			basePos = endPos + 1;
+		}
+		else
+		{
+			endPos = c_rstLine.find_first_of(c_szDelimeter, beginPos);
+			basePos = endPos;
+		}
+
+		pstTokenVector->push_back(c_rstLine.substr(beginPos, endPos - beginPos));
+
+		if (int(c_rstLine.find_first_not_of(c_szDelimeter, basePos)) < 0)
+			break;
+	} while (basePos < c_rstLine.length());
+
+	return 0;
 }
 
 DWORD CMemoryTextFileLoader::GetLineCount()

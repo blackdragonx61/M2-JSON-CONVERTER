@@ -54,11 +54,11 @@ public:
 
 		try
 		{
-			file << m_JsonData.dump(m_Indent);
+			file << m_JsonData.dump(m_Indent, ' ', false, json::error_handler_t::ignore);
 		}
 		catch (const std::exception& ex)
 		{
-			printf("<%s> Error: %s\n", m_FileName.c_str(), ex.what());
+			printf("[%s] <%s> Error: %s\n", typeid(*this).name(), m_FileName.c_str(), ex.what());
 			file.close();
 			return;
 		}

@@ -5,16 +5,21 @@
 
 #include <Windows.h>
 
-#include "../Convert/atlasinfo/atlasinfo.hpp"
-#include "../Convert/blend/blend.hpp"
-#include "../Convert/cfg/cfg.hpp"
-#include "../Convert/cube/cube.hpp"
-#include "../Convert/db_config/db_config.hpp"
-#include "../Convert/game_config/game_config.hpp"
-#include "../Convert/msm/msm.hpp"
-#include "../Convert/group/group.hpp"
-#include "../Convert/group_group/group_group.hpp"
-#include "../Convert/item_mask/item_mask.hpp"
+/*CLIENT*/
+#include "../Convert/Client/atlasinfo/atlasinfo.hpp"
+#include "../Convert/Client/cfg/cfg.hpp"
+#include "../Convert/Client/msm/msm.hpp"
+#include "../Convert/Client/item_desc/item_desc.hpp"
+#include "../Convert/Client/item_list/item_list.hpp"
+
+/*SERVER*/
+#include "../Convert/Server/blend/blend.hpp"
+#include "../Convert/Server/cube/cube.hpp"
+#include "../Convert/Server/db_config/db_config.hpp"
+#include "../Convert/Server/game_config/game_config.hpp"
+#include "../Convert/Server/group/group.hpp"
+#include "../Convert/Server/group_group/group_group.hpp"
+#include "../Convert/Server/item_mask/item_mask.hpp"
 
 static void Convert(DumpInterface&& c)
 {
@@ -28,12 +33,9 @@ int main()
 
 	DumpInterface::CreateOutDir();
 
+	/*CLIENT*/
 	Convert(CConvertATLASINFO{ "atlasinfo.txt" });
-	Convert(CConvertBLEND{ "blend.txt" });
 	Convert(CConvertCFG{ "metin2.cfg" });
-	Convert(CConvertCUBE{ "cube.txt" });
-	Convert(CConvertDBCONFIG{ "conf.txt" });
-	Convert(CConvertGAMECONFIG{ "CONFIG" });
 	Convert(CConvertMSM{ "assassin_m.msm" });
 	Convert(CConvertMSM{ "assassin_w.msm" });
 	Convert(CConvertMSM{ "shaman_m.msm" });
@@ -43,6 +45,14 @@ int main()
 	Convert(CConvertMSM{ "warrior_m.msm" });
 	Convert(CConvertMSM{ "warrior_w.msm" });
 	Convert(CConvertMSM{ "wolfman_m.msm" });
+	Convert(CConvertITEMDESC{ "itemdesc.txt" });
+	Convert(CConvertITEMLIST{ "item_list.txt" });
+
+	/*SERVER*/
+	Convert(CConvertBLEND{ "blend.txt" });
+	Convert(CConvertCUBE{ "cube.txt" });
+	Convert(CConvertDBCONFIG{ "conf.txt" });
+	Convert(CConvertGAMECONFIG{ "CONFIG" });
 	Convert(CConvertGROUP{ "group.txt" });
 	Convert(CConvertGROUPGROUP{ "group_group.txt" });
 	Convert(CConvertITEMMASK{ "ori_to_new_table.txt" });
