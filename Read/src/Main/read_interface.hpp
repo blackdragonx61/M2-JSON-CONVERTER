@@ -2,10 +2,16 @@
 
 #include <string>
 #include <fstream>
+#include <vector>
 
 // https://github.com/nlohmann/json (3.10.5)
 #include <nlohmann/json.hpp>
 using json = nlohmann::ordered_json;
+
+// https://github.com/Tencent/rapidjson/ (1.1.0)
+#include <rapidjson/document.h>
+#include <rapidjson/istreamwrapper.h>
+#include <rapidjson/error/en.h>
 
 class ReadInterface
 {

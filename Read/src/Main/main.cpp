@@ -3,7 +3,6 @@
 * 21 Feb 2022
 */
 
-#include <Windows.h>
 #include <iostream>
 
 /*CLIENT*/
@@ -16,8 +15,6 @@ static void Read(ReadInterface&& c)
 
 int main()
 {
-	SetConsoleTitle("M2JSONCONVERTER by blackdragonx61 / Mali");
-
 	/*CLIENT*/
 	Read(CReadATLASINFO{ "atlasinfo.json" });
 	
