@@ -18,8 +18,8 @@ bool CConvertITEMMASK::BuildJson() /*override*/
 		return false;
 	}
 
-	int ori_vnum, new_vnum;
-	while (fscanf(fp, "%d %d", &ori_vnum, &new_vnum) != EOF)
+	std::uint64_t ori_vnum, new_vnum;
+	while (fscanf(fp, "%llu %llu", &ori_vnum, &new_vnum) != EOF)
 	{
 		m_JsonData += {
 			{ "new_vnum", new_vnum },

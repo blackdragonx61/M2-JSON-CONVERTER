@@ -55,7 +55,7 @@ bool CConvertBLEND::BuildJson() /*override*/
 					return false;
 				}
 
-				jSub["item_vnum"] = std::stoul(v);
+				jSub["item_vnum"] = std::stoull(v);
 			}
 			else if (!_strcmpi(token_string, "apply_type"))
 			{

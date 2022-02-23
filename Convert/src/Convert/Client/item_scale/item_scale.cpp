@@ -36,7 +36,7 @@ bool CConvertITEMSCALE::BuildJson() /*override*/
 		try
 		{
 			json jSub{
-				{ "vnum", std::stoul(TokenVector[0]) },
+				{ "vnum", std::stoull(TokenVector[0]) },
 				{ "job", TokenVector[1] },
 				{ "sex", TokenVector[2] },
 				{ "param1", std::stoi(TokenVector[3]) },

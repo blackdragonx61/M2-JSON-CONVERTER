@@ -36,7 +36,7 @@ bool CConvertRACEHEIGHT::BuildJson() /*override*/
 		try
 		{
 			m_JsonData += {
-				{ "vnum", std::stoul(TokenVector[0]) },
+				{ "vnum", std::stoull(TokenVector[0]) },
 				{ "height", std::stof(TokenVector[1]) }
 			};
 		}

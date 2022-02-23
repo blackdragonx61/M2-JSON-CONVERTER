@@ -21,12 +21,16 @@
   <ItemGroup>
     <ClCompile Include="src\Main\main.cpp" />
     <ClCompile Include="src\Read\Client\atlasinfo\atlasinfo.cpp" />
+    <ClCompile Include="src\Read\Client\item_desc\item_desc.cpp" />
+    <ClCompile Include="src\Read\Client\item_list\item_list.cpp" />
     <ClCompile Include="src\Read\Client\msm\msm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource\resource.h" />
     <ClInclude Include="src\Main\read_interface.hpp" />
     <ClInclude Include="src\Read\Client\atlasinfo\atlasinfo.hpp" />
+    <ClInclude Include="src\Read\Client\item_desc\item_desc.hpp" />
+    <ClInclude Include="src\Read\Client\item_list\item_list.hpp" />
     <ClInclude Include="src\Read\Client\msm\msm.hpp" />
   </ItemGroup>
   <ItemGroup>

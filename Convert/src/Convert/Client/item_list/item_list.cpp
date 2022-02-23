@@ -36,7 +36,7 @@ bool CConvertITEMLIST::BuildJson() /*override*/
 		try
 		{
 			json jSub{
-				{ "vnum", std::stoul(TokenVector[0]) },
+				{ "vnum", std::stoull(TokenVector[0]) },
 				{ "type", TokenVector[1] },
 				{ "icon", TokenVector[2] }
 			};

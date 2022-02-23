@@ -236,7 +236,7 @@ bool CConvertDBCONFIG::BuildJson() /*override*/
 					printf("[%s] Cannot Open: <%s> ITEM_ID_RANGE error.\n", typeid(*this).name(), sFileName.c_str());
 					return false;
 				}
-				m_JsonData["ITEM_ID_RANGE"] = { std::stoul(v.substr(0, pos)), std::stoul(v.substr(pos + 1)) };
+				m_JsonData["ITEM_ID_RANGE"] = { std::stoull(v.substr(0, pos)), std::stoull(v.substr(pos + 1)) };
 			}
 		}
 		catch (const std::exception& ex)

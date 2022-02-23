@@ -42,11 +42,13 @@ bool CConvertITEMDESC::BuildJson() /*override*/
 		try
 		{
 			json jSub{
-				{ "vnum", std::stoul(kTokenVector[ITEMDESC_COL_VNUM]) },
-				{ "name", kTokenVector[ITEMDESC_COL_NAME] },
-				{ "description", kTokenVector[ITEMDESC_COL_DESC] },
+				{ "vnum", std::stoull(kTokenVector[ITEMDESC_COL_VNUM]) },
+				{ "name", kTokenVector[ITEMDESC_COL_NAME] }, // not using
 			};
 
+			if (kTokenVector[ITEMDESC_COL_DESC].empty() == false)
+				jSub["description"] = kTokenVector[ITEMDESC_COL_DESC];
+			
 			if (kTokenVector[ITEMDESC_COL_SUMM].empty() == false)
 				jSub["summary"] = kTokenVector[ITEMDESC_COL_SUMM];
 

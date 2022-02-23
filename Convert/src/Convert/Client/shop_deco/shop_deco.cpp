@@ -36,7 +36,7 @@ bool CConvertSHOPDECORATION::BuildJson() /*override*/
 				m_JsonData += {
 					{ "type", std::stoi(TokenVector[0]) },
 					{ "name", TokenVector[1] },
-					{ "vnum", std::stoul(TokenVector[2]) }
+					{ "vnum", std::stoull(TokenVector[2]) }
 				};
 			}
 			else if (sizeTokenVec == 4)

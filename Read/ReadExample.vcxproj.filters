@@ -26,6 +26,12 @@
     <Filter Include="Source Files\Read\Client\msm">
       <UniqueIdentifier>{c1f18ece-b4db-4728-802b-ac2fd2b081e7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Read\Client\item_desc">
+      <UniqueIdentifier>{63a83ac3-160e-4101-91d4-0cb6578b9301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Read\Client\item_list">
+      <UniqueIdentifier>{6f39ccc7-d40c-4c6b-8bb2-e5b5cbdb6287}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main\main.cpp">
@@ -36,6 +42,12 @@
     </ClCompile>
     <ClCompile Include="src\Read\Client\msm\msm.cpp">
       <Filter>Source Files\Read\Client\msm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Read\Client\item_desc\item_desc.cpp">
+      <Filter>Source Files\Read\Client\item_desc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Read\Client\item_list\item_list.cpp">
+      <Filter>Source Files\Read\Client\item_list</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +62,12 @@
     </ClInclude>
     <ClInclude Include="src\Read\Client\msm\msm.hpp">
       <Filter>Source Files\Read\Client\msm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Read\Client\item_desc\item_desc.hpp">
+      <Filter>Source Files\Read\Client\item_desc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Read\Client\item_list\item_list.hpp">
+      <Filter>Source Files\Read\Client\item_list</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
