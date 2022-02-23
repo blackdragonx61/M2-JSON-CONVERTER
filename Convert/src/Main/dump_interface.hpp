@@ -58,7 +58,7 @@ public:
 		}
 		catch (const std::exception& ex)
 		{
-			printf("[%s] <%s> Error: %s\n", typeid(*this).name(), m_FileName.c_str(), ex.what());
+			printf("[%s] <%s> Error: %s\n", typeid(this).name(), m_FileName.c_str(), ex.what());
 			file.close();
 			return;
 		}

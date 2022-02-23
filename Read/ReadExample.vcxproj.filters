@@ -23,6 +23,9 @@
     <Filter Include="Resource">
       <UniqueIdentifier>{23d66975-ae49-482e-bcf8-b66717a2f0cb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Read\Client\msm">
+      <UniqueIdentifier>{c1f18ece-b4db-4728-802b-ac2fd2b081e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main\main.cpp">
@@ -30,6 +33,9 @@
     </ClCompile>
     <ClCompile Include="src\Read\Client\atlasinfo\atlasinfo.cpp">
       <Filter>Source Files\Read\Client\atlasinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Read\Client\msm\msm.cpp">
+      <Filter>Source Files\Read\Client\msm</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -41,6 +47,9 @@
     </ClInclude>
     <ClInclude Include="resource\resource.h">
       <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Read\Client\msm\msm.hpp">
+      <Filter>Source Files\Read\Client\msm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

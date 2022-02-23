@@ -21,11 +21,13 @@
   <ItemGroup>
     <ClCompile Include="src\Main\main.cpp" />
     <ClCompile Include="src\Read\Client\atlasinfo\atlasinfo.cpp" />
+    <ClCompile Include="src\Read\Client\msm\msm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource\resource.h" />
     <ClInclude Include="src\Main\read_interface.hpp" />
     <ClInclude Include="src\Read\Client\atlasinfo\atlasinfo.hpp" />
+    <ClInclude Include="src\Read\Client\msm\msm.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="resource\Read.rc" />
@@ -112,7 +114,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RAPIDJSON_NOMEMBERITERATORCLASS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)Extern\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -128,7 +130,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RAPIDJSON_NOMEMBERITERATORCLASS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)Extern\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -144,7 +146,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RAPIDJSON_NOMEMBERITERATORCLASS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)Extern\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -160,7 +162,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RAPIDJSON_NOMEMBERITERATORCLASS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)Extern\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>

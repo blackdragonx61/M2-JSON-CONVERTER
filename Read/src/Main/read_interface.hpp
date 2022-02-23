@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <format>
 
 // https://github.com/Tencent/rapidjson/ (1.1.0)
 #include <rapidjson/document.h>
@@ -20,7 +21,7 @@ public:
 
 	virtual ~ReadInterface() 
 	{
-		printf("-----------------------READ END:<%s>-----------------------\n", m_FileName.c_str());
+		printf("-----------------------READ END:<%s>-----------------------\n\n", m_FileName.c_str());
 	};
 	virtual void PrintJson() = 0;
 
