@@ -233,7 +233,7 @@ bool CConvertDBCONFIG::BuildJson() /*override*/
 				const auto pos = v.find(' ');
 				if (pos == std::string::npos)
 				{
-					printf("[%s] Cannot Open: <%s> ITEM_ID_RANGE error.\n", typeid(*this).name(), sFileName.c_str());
+					printf("[%s]: <%s> ITEM_ID_RANGE error.\n", typeid(*this).name(), sFileName.c_str());
 					return false;
 				}
 				m_JsonData["ITEM_ID_RANGE"] = { std::stoull(v.substr(0, pos)), std::stoull(v.substr(pos + 1)) };
