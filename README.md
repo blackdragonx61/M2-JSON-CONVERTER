@@ -9,6 +9,7 @@
 - [x] CONFIG(server/game)
 - [x] group.txt(server)
 - [x] group_group.txt(server)
+- [x] item_names.txt(server)
 - [x] ori_to_new_table.txt(server)
 - [x] atlasinfo.txt(client)
 - [x] cfg(client)
