@@ -184,6 +184,7 @@
     <ClInclude Include="src\Convert\SERVER\group\group.hpp" />
     <ClInclude Include="src\Convert\SERVER\group_group\group_group.hpp" />
     <ClInclude Include="src\Convert\SERVER\item_mask\item_mask.hpp" />
+    <ClInclude Include="src\Convert\Server\item_names\item_names.hpp" />
     <ClInclude Include="src\M2\file_loader.h" />
     <ClInclude Include="src\M2\pool.h" />
     <ClInclude Include="src\M2\text_file_loader.h" />
@@ -211,6 +212,7 @@
     <ClCompile Include="src\Convert\SERVER\group\group.cpp" />
     <ClCompile Include="src\Convert\SERVER\group_group\group_group.cpp" />
     <ClCompile Include="src\Convert\SERVER\item_mask\item_mask.cpp" />
+    <ClCompile Include="src\Convert\Server\item_names\item_names.cpp" />
     <ClCompile Include="src\M2\file_loader.cpp" />
     <ClCompile Include="src\M2\text_file_loader.cpp" />
     <ClCompile Include="src\Main\main.cpp" />

@@ -22,6 +22,7 @@
 #include "../Convert/Server/game_config/game_config.hpp"
 #include "../Convert/Server/group/group.hpp"
 #include "../Convert/Server/group_group/group_group.hpp"
+#include "../Convert/Server/item_names/item_names.hpp"
 #include "../Convert/Server/item_mask/item_mask.hpp"
 
 static void Convert(DumpInterface&& c)
@@ -61,6 +62,7 @@ int main()
 	Convert(CConvertGAMECONFIG{ "CONFIG" });
 	Convert(CConvertGROUP{ "group.txt" });
 	Convert(CConvertGROUPGROUP{ "group_group.txt" });
+	Convert(CConvertITEMNAMES{ "item_names.txt" });
 	Convert(CConvertITEMMASK{ "ori_to_new_table.txt" });
 
 	printf("\n");

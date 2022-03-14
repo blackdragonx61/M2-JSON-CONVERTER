@@ -69,6 +69,9 @@
     <Filter Include="Source\Convert\Client\shop_deco">
       <UniqueIdentifier>{d3d70fd2-cbb8-4c56-a4ce-1febdcbf8e2d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Convert\Server\item_names">
+      <UniqueIdentifier>{286e7725-fa43-483e-a27f-c60ff5fa24f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource\resource.h">
@@ -130,6 +133,9 @@
     </ClInclude>
     <ClInclude Include="src\Convert\Client\shop_deco\shop_deco.hpp">
       <Filter>Source\Convert\Client\shop_deco</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\Server\item_names\item_names.hpp">
+      <Filter>Source\Convert\Server\item_names</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -196,6 +202,9 @@
     </ClCompile>
     <ClCompile Include="src\Convert\Client\shop_deco\shop_deco.cpp">
       <Filter>Source\Convert\Client\shop_deco</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\Server\item_names\item_names.cpp">
+      <Filter>Source\Convert\Server\item_names</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
