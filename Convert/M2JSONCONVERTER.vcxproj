@@ -175,6 +175,7 @@
     <ClInclude Include="src\Convert\CLIENT\item_list\item_list.hpp" />
     <ClInclude Include="src\Convert\Client\item_scale\item_scale.hpp" />
     <ClInclude Include="src\Convert\CLIENT\msm\msm.hpp" />
+    <ClInclude Include="src\Convert\Client\npclist\npclist.hpp" />
     <ClInclude Include="src\Convert\Client\race_height\race_height.hpp" />
     <ClInclude Include="src\Convert\Client\shop_deco\shop_deco.hpp" />
     <ClInclude Include="src\Convert\SERVER\blend\blend.hpp" />
@@ -203,6 +204,7 @@
     <ClCompile Include="src\Convert\CLIENT\item_list\item_list.cpp" />
     <ClCompile Include="src\Convert\Client\item_scale\item_scale.cpp" />
     <ClCompile Include="src\Convert\CLIENT\msm\msm.cpp" />
+    <ClCompile Include="src\Convert\Client\npclist\npclist.cpp" />
     <ClCompile Include="src\Convert\Client\race_height\race_height.cpp" />
     <ClCompile Include="src\Convert\Client\shop_deco\shop_deco.cpp" />
     <ClCompile Include="src\Convert\SERVER\blend\blend.cpp" />

@@ -9,6 +9,7 @@
 #include "../Convert/Client/atlasinfo/atlasinfo.hpp"
 #include "../Convert/Client/cfg/cfg.hpp"
 #include "../Convert/Client/msm/msm.hpp"
+#include "../Convert/Client/npclist/npclist.hpp"
 #include "../Convert/Client/item_desc/item_desc.hpp"
 #include "../Convert/Client/item_list/item_list.hpp"
 #include "../Convert/Client/item_scale/item_scale.hpp"
@@ -49,6 +50,7 @@ int main()
 	Convert(CConvertMSM{ "warrior_m.msm" });
 	Convert(CConvertMSM{ "warrior_w.msm" });
 	Convert(CConvertMSM{ "wolfman_m.msm" });
+	Convert(CConvertNPCLIST{ "npclist.txt" });
 	Convert(CConvertITEMDESC{ "itemdesc.txt" });
 	Convert(CConvertITEMLIST{ "item_list.txt" });
 	Convert(CConvertITEMSCALE{ "item_scale.txt" });

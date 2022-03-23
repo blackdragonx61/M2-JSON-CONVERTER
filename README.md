@@ -17,5 +17,6 @@
 - [x] item_list.txt(client)
 - [x] item_scale.txt(client)
 - [x] msm(client)
+- [x] npclist.txt(client)
 - [x] race_height.txt(client)
 - [x] shop_deco.txt(client)

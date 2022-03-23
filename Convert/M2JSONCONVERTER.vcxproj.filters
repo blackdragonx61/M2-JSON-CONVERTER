@@ -72,6 +72,9 @@
     <Filter Include="Source\Convert\Server\item_names">
       <UniqueIdentifier>{286e7725-fa43-483e-a27f-c60ff5fa24f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Convert\Client\npclist">
+      <UniqueIdentifier>{67b29296-9ab6-4d97-97bd-48157ca958fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource\resource.h">
@@ -136,6 +139,9 @@
     </ClInclude>
     <ClInclude Include="src\Convert\Server\item_names\item_names.hpp">
       <Filter>Source\Convert\Server\item_names</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Convert\Client\npclist\npclist.hpp">
+      <Filter>Source\Convert\Client\npclist</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +211,9 @@
     </ClCompile>
     <ClCompile Include="src\Convert\Server\item_names\item_names.cpp">
       <Filter>Source\Convert\Server\item_names</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Convert\Client\npclist\npclist.cpp">
+      <Filter>Source\Convert\Client\npclist</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
